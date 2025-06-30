@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Metadata Microservice</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 40px;
+      }
+      form {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>File Metadata Microservice</h1>
+    <p>Upload a file to get its name, type, and size:</p>
+    <form action="/api/fileanalyse" method="POST" enctype="multipart/form-data">
+      <input type="file" name="upfile" required />
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
